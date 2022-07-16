@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <style>
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+        .content{display:flex;justify-content: center;}
+        .contato{width:100%;max-width: 500px;}
+        .form{display:flex;flex-direction: column;}
+        .field{padding: 10px;margin-bottom: 15px;border:1px;}
+        textarea{height: 150px;}
+     
+    </style>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <div class="box">
+  <nav>
+    <ul>
+       <li>
+            <a href="index.html">Voltar</a>
+       </li>
+    </ul>
+   </nav>
+    <section>
+        <div class="container">
+         <legend>Formulário de Contato</legend>
+         <h4>Alguma dúvida? Mande sua mensagem pelo formulário abaixo</h4>
+         <form class="form" method="post" action="./Email.php">
+            <input class="field" name="nome" placeholder="Nome">
+            <input class="field" name="email" placeholder="Email">
+            <input class="field" name="Livro para adicionar na biblioteca" placeholder="Adicionar livro (Opcional)">
+            <textarea class="field" name="mensagem" placeholder="Digite sua mensagem aqui"></textarea>
+            <input class="field" type="submit" value="Enviar">
+            <fieldset>
+                <p class="copyright">Todos os direitos reservados @ <a href="https://www.linkedin.com/in/larissa-souza-2b1b51204/" target="blank" title="Larissa Souza"> Larissa Souza</a></p>
+            </fieldset>
+            
+         </form>
+
+        </div>
+    </section>
+</body>
+</html>
